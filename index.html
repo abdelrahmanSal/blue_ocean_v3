@@ -1,0 +1,2499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+      rel="stylesheet" />
+    <title>Perfume Store</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <!--your logo image -->
+        <img src="./logo/logo_converted.webp" alt />
+        <h1>Blue Ocean For Perfume</h1>
+        <!-- name of your logo  -->
+      </div>
+      <div class="mini-box">
+        <h1 id="home" onclick="activateMenu('home')">Home</h1>
+      </div>
+      <div>
+        <h1 id="products" onclick="activateMenu('products')">Products</h1>
+      </div>
+
+      <div>
+        <h1 id="cart" onclick="activateMenu('cart')">
+          Cart (<span id="cartCount">0</span>)
+        </h1>
+      </div>
+    </nav>
+    <div class="content">
+      <!-- homeContent -->
+      <div id="homeContent" class="content-section">
+        <div class="slider">
+          <div class="panner-offers">
+            <div class="offer">
+              <img class="offer-img" src="./panner-offers/offer-panner.WEBP"
+                alt />
+              <p class="offer-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                aspernatur tempore rem placeat, veniam esse mollitia odio?
+                Voluptatibus, neque explicabo, quod dolorum beatae iste laborum
+                sunt hic vel blanditiis dolorem!
+              </p>
+            </div>
+            <div class="offer">
+              <img class="offer-img" src="./panner-offers/offer-panner-2.webp"
+                alt />
+              <p class="offer-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                aspernatur tempore rem placeat, veniam esse mollitia odio?
+                Voluptatibus, neque explicabo, quod dolorum beatae iste laborum
+                sunt hic vel blanditiis dolorem!
+              </p>
+            </div>
+            <div class="offer">
+              <img class="offer-img" src="./panner-offers/offer-panner-3.WEBP"
+                alt />
+              <p class="offer-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                aspernatur tempore rem placeat, veniam esse mollitia odio?
+                Voluptatibus, neque explicabo, quod dolorum beatae iste laborum
+                sunt hic vel blanditiis dolorem!
+              </p>
+            </div>
+            <div class="offer">
+              <img class="offer-img" src="./panner-offers/offer-panner-4.WEBP"
+                alt />
+              <p class="offer-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                aspernatur tempore rem placeat, veniam esse mollitia odio?
+                Voluptatibus, neque explicabo, quod dolorum beatae iste laborum
+                sunt hic vel blanditiis dolorem!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="second-container-slider">
+          <div class="Products-slider">
+            <div class="Product-card">
+              <img src="./products/product1.webp" alt="Perfume 1"
+                class="Product-img" />
+              <h3 class="Product-name">Perfume 1</h3>
+              <p class="Product-price">$50.00</p>
+              <button
+                onclick="addToCart('Perfume 1', 50, './products/product1.webp')">
+                Add to Cart
+              </button>
+            </div>
+            <div class="Product-card">
+              <img src="./products/product2.webp" alt="Perfume 2"
+                class="Product-img" />
+              <h3 class="Product-name">Perfume 2</h3>
+              <p class="Product-price">$60.00</p>
+              <button
+                onclick="addToCart('Perfume 1', 50, './products/product2.webp')">
+                Add to Cart
+              </button>
+            </div>
+            <div class="Product-card">
+              <img src="./products/product3.webp" alt="Perfume 3"
+                class="Product-img" />
+              <h3 class="Product-name">Perfume 3</h3>
+              <p class="Product-price">$70.00</p>
+              <button
+                onclick="addToCart('Perfume 1', 50, './products/product3.webp')">
+                Add to Cart
+              </button>
+            </div>
+            <div class="Product-card">
+              <img src="./products/product4.webp" alt="Perfume 4"
+                class="Product-img" />
+              <h3 class="Product-name">Perfume 4</h3>
+              <p class="Product-price">$80.00</p>
+              <button
+                onclick="addToCart('Perfume 1', 50, './products/product4.webp')">
+                Add to Cart
+              </button>
+            </div>
+            <div class="Product-card">
+              <img src="./products/product5.webp" alt="Perfume 5"
+                class="Product-img" />
+              <h3 class="Product-name">Perfume 5</h3>
+              <p class="Product-price">$90.00</p>
+              <button
+                onclick="addToCart('Perfume 1', 50, './products/product5.webp')">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+         
+        </div>
+        <div class="recommendation">
+          <div class="image-change">
+            <!-- this div have the photo of bottle who chenge  -->
+            <!-- bg-chenge -->
+          </div>
+          <p>
+            Indulge in the world of luxury with these exceptional perfumes, each
+            offering a unique and unforgettable olfactory experience. Perfect
+            for special occasions or as a gift for someone who appreciates the
+            finer things in life, these fragrances are the epitome of elegance
+            and sophistication.
+          </p>
+        </div>
+
+        <div class="summer-offer">
+          <img src="./panner-offers/offer of share codes copy.png" alt />
+          <h1>
+            "Exclusive Summer Luxury Perfume Offer: Indulge in the Finest Scents
+            of the Season!"
+          </h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+            ipsa aliquid, corporis eveniet quam assumenda expedita magnam eaque.
+            Repellat error quod excepturi distinctio ab hic quaerat at ut
+            nostrum id!
+          </p>
+        </div>
+      </div>
+
+      <!-- end homeContent -->
+
+      <!-- Products section content -->
+      <div id="productsContent" class="content-section">
+
+
+
+
+
+        <nav class="nav2">
+          <div>
+            <h2 id="menuPerfume" onclick="activateCategory('perfume')">
+              Perfume
+            </h2>
+          </div>
+          <div>
+            <h2 id="menuSkincare" onclick="activateCategory('skincare')">
+             body care
+            </h2>
+          </div>
+        
+        </nav>
+
+        <div id="contentPerfume" class="content-section-two">
+          <h1>perfume</h1>
+
+          <div class="container-perfume-product">
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/aqua_di_gio.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">aqua di gio</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('aqua di gio ', 500, './products/perfume/aqua_di_gio.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/aqua_di_gio.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/aqua_di_gio.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/diser_red.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">diser red</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('dunhill diser red', 500, './products/perfume/diser_red.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/diser_red.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/diser_red.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/champion.webp" alt="Champion"
+                  class="Product-image" />
+                <h3 class="Product-name">Champion</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price & size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('Champion', 500, './products/perfume/champion.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('Champion', 300, './products/perfume/champion.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('Champion', 200, './products/perfume/champion.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/ck1.webp" alt="CK1"
+                  class="Product-image" />
+                <h3 class="Product-name">CK1</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price & size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('CK1', 500, './products/perfume/ck1.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('CK1', 300, './products/perfume/ck1.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('CK1', 200, './products/perfume/ck1.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/eros.webp" alt="Eros"
+                  class="Product-image" />
+                <h3 class="Product-name">Eros</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price & size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('Eros', 500, './products/perfume/eros.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('Eros', 300, './products/perfume/eros.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('Eros', 200, './products/perfume/eros.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/intes.webp" alt="Intes"
+                  class="Product-image" />
+                <h3 class="Product-name">Intes</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price & size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('Intes', 500, './products/perfume/intes.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('Intes', 300, './products/perfume/intes.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('Intes', 200, './products/perfume/intes.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/invectus.webp" alt="Invictus"
+                  class="Product-image" />
+                <h3 class="Product-name">Invictus</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price & size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('Invictus', 500, './products/perfume/invectus.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('Invictus', 300, './products/perfume/invectus.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('Invictus', 200, './products/perfume/invectus.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/lucky.webp" alt="Lucky"
+                  class="Product-image" />
+                <h3 class="Product-name">Lucky</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price & size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('Lucky', 500, './products/perfume/lucky.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('Lucky', 300, './products/perfume/lucky.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('Lucky', 200, './products/perfume/lucky.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/maninblack.webp" alt="Man in Black"
+                  class="Product-image" />
+                <h3 class="Product-name">Man in Black</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price & size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('Man in Black', 500, './products/perfume/maninblack.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('Man in Black', 300, './products/perfume/maninblack.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('Man in Black', 200, './products/perfume/maninblack.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/one_million.webp" alt="One Million"
+                  class="Product-image" />
+                <h3 class="Product-name">One Million</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price & size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('One Million', 500, './products/perfume/one_million.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('One Million', 300, './products/perfume/one_million.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('One Million', 200, './products/perfume/one_million.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/shoo.webp" alt="Shoo"
+                  class="Product-image" />
+                <h3 class="Product-name">Shoo</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price & size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('Shoo', 500, './products/perfume/shoo.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('Shoo', 300, './products/perfume/shoo.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('Shoo', 200, './products/perfume/shoo.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/silvermontin.webp"
+                  alt="Silver Montin" class="Product-image" />
+                <h3 class="Product-name">Silver Montin</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price & size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('Silver Montin', 500, './products/perfume/silvermontin.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('Silver Montin', 300, './products/perfume/silvermontin.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('Silver Montin', 200, './products/perfume/silvermontin.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/stronger_leather.webp"
+                  alt="Stronger Leather" class="Product-image" />
+                <h3 class="Product-name">Stronger Leather</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price & size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('Stronger Leather', 500, './products/perfume/stronger_leather.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('Stronger Leather', 300, './products/perfume/stronger_leather.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('Stronger Leather', 200, './products/perfume/stronger_leather.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/suvage_edt.webp" alt="Suvage EDT"
+                  class="Product-image" />
+                <h3 class="Product-name">Suvage EDT</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price & size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('Suvage EDT', 500, './products/perfume/suvage_edt.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('Suvage EDT', 300, './products/perfume/suvage_edt.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('Suvage EDT', 200, './products/perfume/suvage_edt.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/the_game.webp" alt="The Game"
+                  class="Product-image" />
+                <h3 class="Product-name">The Game</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price & size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('The Game', 500, './products/perfume/the_game.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('The Game', 300, './products/perfume/the_game.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('The Game', 200, './products/perfume/the_game.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/victory_elixir.webp"
+                  alt="Victory Elixir" class="Product-image" />
+                <h3 class="Product-name">Victory Elixir</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price & size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('Victory Elixir', 500, './products/perfume/victory_elixir.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('Victory Elixir', 300, './products/perfume/victory_elixir.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('Victory Elixir', 200, './products/perfume/victory_elixir.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/voyage.webp" alt="Voyage"
+                  class="Product-image" />
+                <h3 class="Product-name">Voyage</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price & size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('Voyage', 500, './products/perfume/voyage.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('Voyage', 300, './products/perfume/voyage.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('Voyage', 200, './products/perfume/voyage.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- start the oriantl perfumes  -->
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/amir_el_oud.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">amir_el_oud</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('amir_el_oud', 600, './products/perfume/amir_el_oud.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('amir_el_oud', 350, './products/perfume/amir_el_oud.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('amir_el_oud', 250, './products/perfume/amir_el_oud.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/angel_share.webp" alt="Perfume 2"
+                  class="Product-image" />
+                <h3 class="Product-name">angel_share</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('angel_share', 600, './products/perfume/angel_share.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('angel_share', 350, './products/perfume/angel_share.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('angel_share', 250, './products/perfume/angel_share.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/black_afgano.webp" alt="Perfume 3"
+                  class="Product-image" />
+                <h3 class="Product-name">black_afgano</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('black_afgano', 600, './products/perfume/black_afgano.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('black_afgano', 350, './products/perfume/black_afgano.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('black_afgano', 250, './products/perfume/black_afgano.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/black_oud.webp" alt="Perfume 4"
+                  class="Product-image" />
+                <h3 class="Product-name">black_oud</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('black_oud', 600, './products/perfume/black_oud.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('black_oud', 350, './products/perfume/black_oud.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('black_oud', 250, './products/perfume/black_oud.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Continue for each perfume -->
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/erbapura.webp" alt="Perfume 5"
+                  class="Product-image" />
+                <h3 class="Product-name">erbapura</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('erbapura', 600, './products/perfume/erbapura.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('erbapura', 350, './products/perfume/erbapura.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('erbapura', 250, './products/perfume/erbapura.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/kalimat.webp" alt="Perfume 6"
+                  class="Product-image" />
+                <h3 class="Product-name">kalimat</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('kalimat', 600, './products/perfume/kalimat.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('kalimat', 350, './products/perfume/kalimat.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('kalimat', 250, './products/perfume/kalimat.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/madawi.webp" alt="Perfume 7"
+                  class="Product-image" />
+                <h3 class="Product-name">madawi</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('madawi', 600, './products/perfume/madawi.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('madawi', 350, './products/perfume/madawi.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('madawi', 250, './products/perfume/madawi.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/orchid.webp" alt="Perfume 8"
+                  class="Product-image" />
+                <h3 class="Product-name">orchid</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('orchid', 600, './products/perfume/orchid.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('orchid', 350, './products/perfume/orchid.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('orchid', 250, './products/perfume/orchid.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/oud_bouqet.webp" alt="Perfume 9"
+                  class="Product-image" />
+                <h3 class="Product-name">oud_bouqet</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('oud_bouqet', 600, './products/perfume/oud_bouqet.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('oud_bouqet', 350, './products/perfume/oud_bouqet.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('oud_bouqet', 250, './products/perfume/oud_bouqet.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/oud_for_greatnees.webp"
+                  alt="Perfume 10" class="Product-image" />
+                <h3 class="Product-name">oud_for_greatness</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('oud_for_greatness', 600, './products/perfume/oud_for_greatnees.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('oud_for_greatness', 350, './products/perfume/oud_for_greatnees.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('oud_for_greatness', 250, './products/perfume/oud_for_greatnees.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/oud_isphahan.webp" alt="Perfume 11"
+                  class="Product-image" />
+                <h3 class="Product-name">oud_isphahan</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('oud_isphahan', 600, './products/perfume/oud_isphahan.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('oud_isphahan', 350, './products/perfume/oud_isphahan.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('oud_isphahan', 250, './products/perfume/oud_isphahan.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/oud_malaki.webp" alt="Perfume 12"
+                  class="Product-image" />
+                <h3 class="Product-name">oud_malaki</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('oud_malaki', 600, './products/perfume/oud_malaki.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('oud_malaki', 350, './products/perfume/oud_malaki.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('oud_malaki', 250, './products/perfume/oud_malaki.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/oudwood.webp" alt="Perfume 13"
+                  class="Product-image" />
+                <h3 class="Product-name">oudwood</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('oudwood', 600, './products/perfume/oudwood.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('oudwood', 350, './products/perfume/oudwood.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('oudwood', 250, './products/perfume/oudwood.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/rose_vanilla.webp" alt="Perfume 14"
+                  class="Product-image" />
+                <h3 class="Product-name">rose_vanilla</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('rose_vanilla', 600, './products/perfume/rose_vanilla.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('rose_vanilla', 350, './products/perfume/rose_vanilla.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('rose_vanilla', 250, './products/perfume/rose_vanilla.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/sultan.webp" alt="Perfume 15"
+                  class="Product-image" />
+                <h3 class="Product-name">sultan</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('sultan', 600, './products/perfume/sultan.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('sultan', 350, './products/perfume/sultan.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('sultan', 250, './products/perfume/sultan.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/tobacco_oud.webp" alt="Perfume 16"
+                  class="Product-image" />
+                <h3 class="Product-name">tobacco_oud</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('tubacco_oud', 600, './products/perfume/tobacco_oud.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('tubacco_oud', 350, './products/perfume/tobacco_oud.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('tubacco_oud', 250, './products/perfume/tobacco_oud.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/tobacco_vanila.webp"
+                  alt="Perfume 17" class="Product-image" />
+                <h3 class="Product-name">tobacco_vanila</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('tobacco_vanila', 600, './products/perfume/tobacco_vanila.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('tubacco_vanila', 350, './products/perfume/tobacco_vanila.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('tubacco_vanila', 250, './products/perfume/tobacco_vanila.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/wesal.webp" alt="Perfume 18"
+                  class="Product-image" />
+                <h3 class="Product-name">wesal</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 600 EGP</p>
+                  <button
+                    onclick="addToCart('wesal', 600, './products/perfume/wesal.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 350 EGP</p>
+                  <button
+                    onclick="addToCart('wesal', 350, './products/perfume/wesal.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 250 EGP</p>
+                  <button
+                    onclick="addToCart('wesal', 250, './products/perfume/wesal.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="perfume-product">
+              <div style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                ">
+                <img src="./products/perfume/altra_male.webp" alt="Perfume 1"
+                  class="Product-image" />
+                <h3 class="Product-name">altra male</h3>
+                <button class="toggleButton" id="toggleButton">
+                  price&size
+                </button>
+              </div>
+              <div class="Product-price-hidden" id="toggleElement">
+                <!-- <div id="details"> -->
+                <button class="x" id="x">x</button>
+                <div class="price-size">
+                  <p>100 m.l = 500 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 500, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>50 m.l = 300 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 300, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="price-size">
+                  <p>30 m.l = 200 EGP</p>
+                  <button
+                    onclick="addToCart('ultra altra_male', 200, './products/perfume/altra_male.webp')">
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contentSkincare" class="content-section-two">
+          <h1>Skincare</h1>
+          <div class="container-skincare-product">
+            <div class="skin-care-product">
+              <img src="./skin-care/product/product1_result.webp"
+                alt="Moisturizing Cream Image" class="Product-image" />
+
+              <h3 class="product-name">Moisturizing Cream</h3>
+              <p class="product-price">Price: $30</p>
+              <button
+                onclick="addToCart('Moisturizing Cream', 30, './skin-care/product/product1_result.webp')">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="skin-care-product">
+              <img src="./skin-care/product/product1_result.webp"
+                alt="Hydrating Serum Image" class="Product-image" />
+              <h3 class="product-name">Hydrating Serum</h3>
+              <p class="product-price">Price: $30</p>
+              <button
+                onclick="addToCart('Hydrating Serum', 30, './skin-care/product/product1_result.webp')">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="skin-care-product">
+              <img src="./skin-care/product/product1_result.webp"
+                alt="Brightening Cleanser Image"
+                class="Product-image" />
+              <h3 class="product-name">Brightening Cleanser</h3>
+              <p class="product-price">Price: $30</p>
+              <button
+                onclick="addToCart('Brightening Cleanser', 30, './skin-care/product/product1_result.webp')">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="skin-care-product">
+              <img src="./skin-care/product/product2_result.webp"
+                alt="Anti-Aging Cream Image" class="Product-image" />
+              <h3 class="product-name">Anti-Aging Cream</h3>
+              <p class="product-price">Price: $40</p>
+              <button
+                onclick="addToCart('Anti-Aging Cream', 40, './skin-care/product/product2_result.webp')">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="skin-care-product">
+              <img src="./skin-care/product/product2_result.webp"
+                alt="Rejuvenating Mask Image" class="Product-image" />
+              <h3 class="product-name">Rejuvenating Mask</h3>
+              <p class="product-price">Price: $40</p>
+              <button
+                onclick="addToCart('Rejuvenating Mask', 40, './skin-care/product/product2_result.webp')">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="skin-care-product">
+              <img src="./skin-care/product/product2_result.webp"
+                alt="Vitamin C Serum Image" class="Product-image" />
+              <h3 class="product-name">Vitamin C Serum</h3>
+              <p class="product-price">Price: $40</p>
+              <button
+                onclick="addToCart('Vitamin C Serum', 40, './skin-care/product/product2_result.webp')">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="skin-care-product">
+              <img src="./skin-care/product/product3_result.webp"
+                alt="Exfoliating Scrub Image" class="Product-image" />
+              <h3 class="product-name">Exfoliating Scrub</h3>
+              <p class="product-price">Price: $25</p>
+              <button
+                onclick="addToCart('Exfoliating Scrub', 25, './skin-care/product/product3_result.webp')">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="skin-care-product">
+              <img src="./skin-care/product/product3_result.webp"
+                alt="Soothing Toner Image" class="Product-image" />
+              <h3 class="product-name">Soothing Toner</h3>
+              <p class="product-price">Price: $25</p>
+              <button
+                onclick="addToCart('Soothing Toner', 25, './skin-care/product/product3_result.webp')">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="skin-care-product">
+              <img src="./skin-care/product/product3_result.webp"
+                alt="Nourishing Oil Image" class="Product-image" />
+              <h3 class="product-name">Nourishing Oil</h3>
+              <p class="product-price">Price: $25</p>
+              <button
+                onclick="addToCart('Nourishing Oil', 25, './skin-care/product/product3_result.webp')">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="skin-care-product">
+              <img src="./skin-care/product/product4_result.webp"
+                alt="Night Repair Cream Image" class="Product-image" />
+              <h3 class="product-name">Night Repair Cream</h3>
+              <p class="product-price">Price: $35</p>
+              <button
+                onclick="addToCart('Night Repair Cream', 35, './skin-care/product/product4_result.webp')">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="skin-care-product">
+              <img src="./skin-care/product/product4_result.webp"
+                alt="Daily Moisturizer Image" class="Product-image" />
+              <h3 class="product-name">Daily Moisturizer</h3>
+              <p class="product-price">Price: $35</p>
+              <button
+                onclick="addToCart('Daily Moisturizer', 35, './skin-care/product/product4_result.webp')">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="skin-care-product">
+              <img src="./skin-care/product/product4_result.webp"
+                alt="Eye Cream Image" class="Product-image" />
+              <h3 class="product-name">Eye Cream</h3>
+              <p class="product-price">Price: $35</p>
+              <button
+                onclick="addToCart('Eye Cream', 35, './skin-care/product/product4_result.webp')">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="skin-care-product">
+              <img src="./skin-care/product/product5_result.webp"
+                alt="Sunscreen Lotion Image" class="Product-image" />
+              <h3 class="product-name">Sunscreen Lotion</h3>
+              <p class="product-price">Price: $50</p>
+              <button
+                onclick="addToCart('Sunscreen Lotion', 50, './skin-care/product/product5_result.webp')">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="skin-care-product">
+              <img src="./skin-care/product/product5_result.webp"
+                alt="BB Cream Image" class="Product-image" />
+              <h3 class="product-name">BB Cream</h3>
+              <p class="product-price">Price: $50</p>
+              <button
+                onclick="addToCart('BB Cream', 50, './skin-care/product/product5_result.webp')">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="skin-care-product">
+              <img src="./skin-care/product/product5_result.webp"
+                alt="After-Sun Gel Image" class="Product-image" />
+              <h3 class="product-name">After-Sun Gel</h3>
+              <p class="product-price">Price: $50</p>
+              <button
+                onclick="addToCart('After-Sun Gel', 50, './skin-care/product/product5_result.webp')">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+      <!-- end Products section content -->
+
+      <div id="cartContent" class="content-section">
+        <!-- Cart section content -->
+      </div>
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="end-line"></div>
+        <div class="container">
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>Email: info@perfumemarket.com</li>
+              <li>Phone: +123-456-7890</li>
+              <li>Address: 123 Perfume Street, Fragrance City</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <p>&copy; 2024 Perfume Market. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+
+</html>
